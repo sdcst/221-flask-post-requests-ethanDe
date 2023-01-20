@@ -7,9 +7,8 @@
         $(document).ready(function() {
             $("#send").on('click',function() {
                 endpoint = $("#endpoint").val()
-                url = "http://127.0.0.1:5000" + endpoint
-                $("#url").val(url)
-                payload = []
+                url = "http://127.0.0.1:5000/newquotes"
+                payload = {'password' : 'a1002a1e1844befbb15b0430369ad2e6b3261b891d4ec5c9bb92a39aceee5ebe'}
                 console.log(payload)
                 data = {
                     title : "This is a payload",
@@ -37,7 +36,6 @@
 
                 })
             })
-
         })
     </script>
     <style>
@@ -46,9 +44,9 @@
             height: 200px;
         }
     </style>
-</head>
 <body>
-    <textarea id="region">This is where we will see ajax (asynchronous javascript and xml) responses</textarea><br>
-    Quote: <input type="text" id="val1" class='data' value=""><br><br>
+    <textarea id="region">Quotes: </textarea><br>
+    Quote (do not include quotations): <input type="text" id="val1" class='data' value=""><br><br>
     <button id="send">Append quote to database</button>
 </body>
+</head>
