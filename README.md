@@ -38,7 +38,7 @@ We will be sending it a dictionary that must contain (at a minimum) the followin
 
 Your client script will ask the user for a quote/joke.
 The client will send a payoad that contains the key, the quote/joke along with any other information you may need (you might specify the name of the table or database
-The server script will search for similar entries in the database, and if there is no math, it will add it to the database.  You may want to consider the use of wildcards to help you out: https://www.sqlitetutorial.net/sqlite-like/. You can view the 'sqlLike.py' file for an example.
+The server script will search for similar entries in the database, and if there is no match, it will add it to the database.  You may want to consider the use of wildcards to help you out: https://www.sqlitetutorial.net/sqlite-like/. You can view the 'sqlLike.py' file for an example.
 
 Other functionality:
 Write another client script and api endpoint that do the following:
